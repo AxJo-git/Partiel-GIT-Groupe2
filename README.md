@@ -105,8 +105,8 @@ Les captures indiquent que l’ensemble du workflow s’exécute correctement : 
 
 La mise en place de ce pipeline permet de vérifier automatiquement le projet à chaque modification du dépôt. Les tests backend et frontend sont exécutés automatiquement, et le build du frontend est généré dans le cadre du processus de déploiement. Cette configuration démontre l’intégration d’une démarche **d’intégration continue et de déploiement continu** dans le projet.
 
-![Capture d’écran de GitHub Actions montrant le job “Tests simples du projet” exécuté avec succès dans le workflow CI/CD. La liste des étapes visibles comprend la préparation du job, la récupération du code, la configuration de Node.js, l’installation du backend et du frontend, puis l’exécution des tests backend et frontend. Toutes les étapes affichent une coche de validation.](image/projet_gestionnaire_taches_examen/alexio1.png)
-![Capture d’écran de GitHub Actions affichant le job “Déploiement simple (étudiant)” réussi. Les étapes visibles incluent la préparation du job, la récupération du code, la configuration de Node.js, le build du frontend, puis une étape de déploiement indiquée comme placeholder. Toutes les étapes sont validées.](image/projet_gestionnaire_taches_examen/alexio2.png)
+![Capture d’écran de GitHub Actions montrant le job “Tests simples du projet” exécuté avec succès dans le workflow CI/CD. La liste des étapes visibles comprend la préparation du job, la récupération du code, la configuration de Node.js, l’installation du backend et du frontend, puis l’exécution des tests backend et frontend. Toutes les étapes affichent une coche de validation.](image/projet_gestionnaire_taches_examen/alexio1)
+![Capture d’écran de GitHub Actions affichant le job “Déploiement simple (étudiant)” réussi. Les étapes visibles incluent la préparation du job, la récupération du code, la configuration de Node.js, le build du frontend, puis une étape de déploiement indiquée comme placeholder. Toutes les étapes sont validées.](image/projet_gestionnaire_taches_examen/alexio2)
 
 ### Théo TESSIER
 ## Tests end-to-end avec Selenium
