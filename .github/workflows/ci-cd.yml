@@ -1,0 +1,71 @@
+name: CI/CD étudiant - Task Manager
+
+on:
+  push:
+    branches:
+      - main
+      - feature/**
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    name: Tests simples du projet
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Installation des dépendances pour les deux parties du projet
+      - name: Installation backend
+        working-directory: ./backend
+        run: npm install
+
+      - name: Installation frontend
+        working-directory: ./frontend
+        run: npm install
+
+      # Lancement des tests backend (inclut les tests d'intégration)
+      - name: Tests backend
+        working-directory: ./backend
+        run: npm test
+
+      # Lancement des tests frontend (Vitest)
+      - name: Tests frontend
+        working-directory: ./frontend
+        run: npm test
+
+  # Job de déploiement très simple, lancé uniquement sur main
+  deploy:
+    name: Déploiement simple (étudiant)
+    needs: ci
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Build minimal pour vérifier que le frontend compile
+      - name: Build frontend
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm run build
+
+      # Ici on se contente de montrer l'étape de déploiement
+      # À adapter dans le README en fonction de l'hébergeur choisi
+      - name: Étape de déploiement (placeholder)
+        run: echo "Ici on brancherait le déploiement vers Render, Vercel, etc."
