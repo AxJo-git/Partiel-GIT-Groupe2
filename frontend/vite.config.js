@@ -24,9 +24,18 @@ export default defineConfig({
     }
   },
   test: {
+    // Configuration globale des tests frontend
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/setupTests.js'
+    setupFiles: './src/setupTests.js',
+    // Configuration de la couverture de code côté frontend
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'html', 'lcov'],
+      reportsDirectory: './coverage',
+      include: ['src/**/*.{js,jsx}'],
+      exclude: ['src/main.jsx']
+    }
   },
   esbuild: {
     loader: 'jsx',
