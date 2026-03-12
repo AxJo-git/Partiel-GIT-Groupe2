@@ -7,14 +7,18 @@ npm-debug.log*
 
 .env
 .env.local
+.env.test
+.env.development
 
 .vscode/
 .idea/
 .DS_Store
+.cursor/
+.codex/
 
 *.log
 
-coverage/
+**/coverage/
 
 .cache/
 .vite/
