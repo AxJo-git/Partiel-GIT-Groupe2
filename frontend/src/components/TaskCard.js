@@ -39,7 +39,7 @@ const TaskCard = ({ task, onEditTask }) => {
         <div className="task-priority">
           <span className={`priority-badge priority-${task.priority}`}>
             {task.priority === 'high' ? 'Haute' : 
-             task.priority === 'medium' ? 'Moyenne' : 'Basse'}
+              task.priority === 'medium' ? 'Moyenne' : 'Basse'}
           </span>
         </div>
 
