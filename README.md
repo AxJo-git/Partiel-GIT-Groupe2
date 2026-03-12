@@ -25,7 +25,7 @@ Théo TESSIER : Selenium
 - Cette étape a créé le fichier de configuration eslint.config.mjs.
 - L’installation s’est terminée sans vulnérabilité détectée (found 0 vulnerabilities).
 
-![Capture d’écran d’un terminal PowerShell montrant l’initialisation de la configuration ESLint avec la commande npm init @eslint/config@latest. Les options sélectionnées indiquent un projet en JavaScript, orienté détection de problèmes, utilisant des modules CommonJS, sans framework ni TypeScript, et exécuté dans le navigateur. Le terminal affiche ensuite l’installation des dépendances eslint, @eslint/js et globals via npm, sans vulnérabilité détectée, puis la création réussie du fichier eslint.config.mjs.](ESLint_configuration.png)
+![Capture d’écran d’un terminal PowerShell montrant l’initialisation de la configuration ESLint avec la commande npm init @eslint/config@latest. Les options sélectionnées indiquent un projet en JavaScript, orienté détection de problèmes, utilisant des modules CommonJS, sans framework ni TypeScript, et exécuté dans le navigateur. Le terminal affiche ensuite l’installation des dépendances eslint, @eslint/js et globals via npm, sans vulnérabilité détectée, puis la création réussie du fichier eslint.config.mjs.](image/projet_gestionnaire_taches_examen/ESLint_configuration.png)
 
 Voici un résumé **concis et complet** des erreurs rencontrées lors de la mise en place des tests et de l’analyse du code avec ESLint :
 
