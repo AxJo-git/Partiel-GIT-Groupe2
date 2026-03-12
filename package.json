@@ -1,0 +1,29 @@
+{
+  "name": "partiel-git-groupe2",
+  "version": "1.0.0",
+  "description": "Application de gestion de tâches",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxJo-git/Partiel-GIT-Groupe2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AxJo-git/Partiel-GIT-Groupe2/issues"
+  },
+  "homepage": "https://github.com/AxJo-git/Partiel-GIT-Groupe2#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0"
+  }
+}
